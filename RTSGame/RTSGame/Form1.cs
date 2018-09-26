@@ -766,7 +766,7 @@ namespace RTSGame
                     x = randPlacement.Next(0, 20);
                     y = randPlacement.Next(0, 20);
 
-                    if(myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild")
+                    if(myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild" && myMap[x, y].Name != "UW" && myMap[x, y].Name != "HW")
                     {
                         rU.XPos = x;
                         rU.YPos = y;
@@ -786,7 +786,7 @@ namespace RTSGame
                     x = randPlacement.Next(0, 20);
                     y = randPlacement.Next(0, 20);
 
-                    if (myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild")
+                    if (myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild" && myMap[x, y].Name != "UW" && myMap[x, y].Name != "HW")
                     {                        
                         mu.XPos = x;
                         mu.YPos = y;
@@ -806,7 +806,7 @@ namespace RTSGame
                     x = randPlacement.Next(0, 20);
                     y = randPlacement.Next(0, 20);
 
-                    if (myMap[x, y].Name != "♥" && myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild")
+                    if (myMap[x, y].Name != "♥" && myMap[x, y].Name != "YRbuild" && myMap[x, y].Name != "XRbuild" && myMap[x, y].Name != "XFbuild" && myMap[x, y].Name != "YFbuild" && myMap[x, y].Name != "UW" && myMap[x, y].Name != "HW")
                     {  
                         rU.XPos = x;
                         rU.YPos = y;
