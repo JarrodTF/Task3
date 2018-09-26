@@ -678,6 +678,8 @@ namespace RTSGame
                     }
                 }
 
+                //Putting buildings into permanent spots in the array.
+
                 build2R.BuildXPos = 0;
                 build2R.BuildYPos = 0;
                 build2R.BuildFaction = "Human's Resource Building";
@@ -738,7 +740,7 @@ namespace RTSGame
                 workshopUndead2.BackColor = Color.Blue;
                 myMap[workshopUndead2.BuildXPos, workshopUndead2.BuildYPos] = workshopUndead2;
 
-                // team 1 melee units
+                //First Team Melee Units
                 for (int i = 0; i < 6; i++)
                 {
                     MeleeUnit mu = new MeleeUnit(this,form1);
@@ -758,7 +760,7 @@ namespace RTSGame
                     }
                 }
 
-                // team 1 ranged units
+                //First Team Ranged Unit
                 for (int i = 0; i < 4; i++)
                 {
                     RangedUnit rU = new RangedUnit();
@@ -778,7 +780,7 @@ namespace RTSGame
                     }
                 }
 
-                // team 2 melee units
+                //Second Team Melee Unit
                 for (int i = 0; i < 6; i++)
                 {
                     MeleeUnit mu = new MeleeUnit(this, form1);
@@ -798,7 +800,7 @@ namespace RTSGame
                     }
                 }
 
-                // team 2 ranged units
+                //Second Team Ranged Unit
                 for (int i = 0; i < 4; i++)
                 {
                     RangedUnit rU = new RangedUnit();
@@ -841,6 +843,8 @@ namespace RTSGame
 
             public void newMap()
             {
+                //Method to redraw, clear a new map. Adds units that are randomized
+
                 gridMap.Controls.Clear();
                 drawUnit();
 
