@@ -1085,8 +1085,18 @@ namespace RTSGame
                     unitLbl.Text = "";
                     MainEngine.Resources.I = 1;
                     MainEngine.Resources.J = 1;
+                    MainEngine.Resources.Coal = 0;
+                    MainEngine.Resources.Steel = 0;
+                    MainEngine.Resources.Iron = 0;
                     resLabel.Text = "00";
                     resLabel2.Text = "00";
+                    coalLabel.Text = "00";
+                    coalLabel2.Text = "00";
+                    ironLabel.Text = "00";
+                    ironLabel2.Text = "00";
+                    steelLabel.Text = "00";
+                    steelLabel2.Text = "00";
+
                     //Draws a new map when reset
                     Map gameMap = new Map(gridMap, this);
                     gameMap.newMap();
