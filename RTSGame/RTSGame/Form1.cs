@@ -28,7 +28,7 @@ namespace RTSGame
             private char symbol;
             protected int distance;
 
-            //Get and Set all private fields to make them public.
+            //Get and Sets all private fields to make them public.
             public int XPos
             {
                 get { return xPos; }
@@ -194,6 +194,7 @@ namespace RTSGame
         {
             //This class is to create an empty tile on the game's map.
 
+            //Get and Sets for empty tiles.
             int xPos, yPos;
             public int XPos
             {
@@ -238,7 +239,7 @@ namespace RTSGame
                 this.resources = new ResourceBuilding(form1);
             }
 
-            //Get and Set for private fields
+            //Get and Sets for private fields
             public int UnitsToProduce
             {
                 get { return unitsToProduce; }
@@ -304,11 +305,15 @@ namespace RTSGame
             private string team;
             private int resourcesRemaining = 0;
 
+
+            //Constructor for Resource Building
             public ResourceBuilding(Form1 form1)
             {
                 this.form1 = form1;
             }
             
+            //Get and Sets for resource buildings
+
             public int WarResources
             {
                 get { return warResources; }
@@ -491,12 +496,15 @@ namespace RTSGame
             int closeX, closeY;
             Map map;
             Form1 form1;
+
+            // Constructor for the class
             public MeleeUnit(Map map, Form1 form1)
             {
                 this.form1 = form1;
                 this.map = map;
             }
 
+            //Methods to handle movements of Ranged Units
             public override void movePos()
             {
                 
@@ -551,6 +559,8 @@ namespace RTSGame
                 return info;
             }
 
+
+            //Save method to save objects to later be read into the game
             public string FileName = @"F:\Saves\RTSMelee.ser";
             public override void Save(string FileName, Unit NewUnits)
             {
@@ -564,11 +574,14 @@ namespace RTSGame
         [Serializable]
         public class RangedUnit : Unit
         {
+
+            //Constructor for ranged unit
             public RangedUnit()
             {
 
             }
 
+            //Methods to handle movements of Ranged Units
             public override void movePos()
             {
                 
